@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1979637189536396');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1979637189536396&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+ 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRØD</title>
+  <meta name="description" content="BRØD Tbilisi, Restaurant in Bellhop Hotel">
+
+  <meta name="keywords" content="BRØD,restaurant, Tbilisi, Bellhop group, reservations, menu, bar" />
+  <meta name="author" content="Bellhop Group" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="BRØD" />
+  <meta property="og:description" content="BRØD" />
+  <meta property="og:image" content="https://bellhopgroup.com/code/brød_white.png" />
+  <meta property="og:url" content="https://bellhopgroup.com" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="./code/fav1.png">
+  <link rel="canonical" href="https://bellhopgroup.com" />
+  <style>
+    @font-face {
+      font-family: 'Bellhop';
+      src: url('./fonts/bellhop3.ttf') format('truetype');
+      font-display: swap;
+    }
+    
+   
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: auto;
+      font-family: 'Bellhop', sans-serif;
+      background-color: #6dbbd1;
+      color: white;
+     
+    }
+    html {
+    overflow-x: hidden;
+    height: 100%;
+  }
+
+  body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  }
+
+  a {
+  text-decoration: none;
+  color: black;
+}
+    .wrapper {
+      position: relative;
+      width: 100%;
+  width: 100%;
+  min-height: 100vh; 
+    }
+
+    .bg-image {
+      width: 100%;
+      display: block;
+      min-height: 100vh;
+  background-color: #6dbbd1; 
+    }
+
+    .bg-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1230 / 768;
+      overflow: hidden;
+    }
+
+    .scroll-container {
+      position: absolute;
+      top: 5%;
+      left: 12.03%;
+      width: 75.8%;
+      height: 95%;
+      overflow: hidden;
+      display: flex;
+      z-index: 2;
+      border-radius: 2%;
+    }
+
+    .scroll-column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      animation-duration: 77s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    .scroll-up {
+      animation-name: scrollUp;
+    }
+
+    .scroll-down {
+      animation-name: scrollDown;
+    }
+
+    .scroll-column img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    @keyframes scrollUp {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-1000%); }
+    }
+
+    @keyframes scrollDown {
+      0% { transform: translateY(-1000%); }
+      100% { transform: translateY(0); }
+    }
+
+    .logo-overlay {
+      position: absolute;
+      top: 5%;
+      left: -1.3%;
+      width: 101.5%;
+      height: 80%;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
+    }
+
+    .logo-overlay img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-height: 700px) {
+  .logo-overlay.desktop-logo-overlay img {
+    max-height: 150%;
+  }
+}
+
+    @media (min-width: 600px) {
+  .corner-icons-mobile {
+    display: none !important;
+  }}
+
+    .corner-icons-desktop {
+      position: absolute;
+      top: -15.3%;
+      right: 2%;
+      display: flex;
+      flex-direction: row;
+      gap: 1vw;
+      z-index: 10;
+    }
+
+    .corner-icons-desktop a {
+      width: 5.2vw;
+      height: 5.2vw;
+      background-color: white;
+      border-radius: 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .corner-icons-desktop a {
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.corner-icons-desktop a:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+  filter: brightness(300%);
+  filter: saturate(200%);
+  
+}
+
+.corner-icons-desktop a:active {
+  filter: invert(25%);
+  transform: scale(1.15);
+}
+
+    .corner-icons-desktop svg {
+      fill: #6dbbd1;
+      width: 2.9vw;
+      height: 2.9vw;
+    }
+
+    .hotspot-links {
+      position: absolute;
+      top: 8.6%;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+    }
+
+    .link-reservations, .link-menu, .link-bar {
+      text-indent: -9999px;
+      display: block;
+      position: absolute;
+      height: 2.7vw;
+    }
+
+
+
+    .top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3vw;
+  padding: 1vw 4vw;
+  z-index: 20;
+  position: relative;
+  background-color: #6dbbd1;
+  width: 500px;
+  
+}
+
+.logo-text {
+  font-size: 4vw;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2vw;
+}
+
+.nav-links a {
+  font-size: 1.7vw;
+  text-decoration: underline;
+  color: white;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.nav-links a:hover {
+  transform: scale(1.08);
+  color: #ffffff; /* slightly brighter white, optional */
+  cursor: pointer;
+}
+
+.desktop-angled-text {
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  left: 63vw;
+  font-size: 2.8vw;
+  font-weight: bold;
+  color: black;
+  transform: rotate(-12deg);
+  z-index: 15;
+  pointer-events: auto;
+  user-select: none;
+  text-decoration: none !important;
+  transition: transform 0.3s ease;
+}
+.desktop-angled-text:hover {
+  transform: rotate(-12deg) scale(1.05);
+}
+.mobile-angled-text {
+  display: none;
+}
+
+
+    .link-reservations { left: 25%; width: 14.4vw; }
+    .link-menu { left: 42.2%; width: 5.8vw; }
+    .link-bar { left: 49.5%; width: 4.8vw; }
+
+    .mobile-slider {
+      display: none;
+    }
+
+    .mobile-logo-overlay{
+      display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   MOBILE (<= 600px) — simple version
+   (no variables, no calc, no clamp)
+   ========================= */
+@media (max-width: 600px) {
+
+  /* Make the page exactly one screen tall and stop scrolling */
+  html, body {
+    height: 100svh;
+    overflow: hidden;
+  }
+
+  /* Screen background image on mobile (optional) */
+  .bg-image {
+    content: url('./landing_background_mobile2.png');
+    width: 100%;
+    height: 100svh;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Hide desktop-only elements on mobile */
+  .scroll-container,
+  .corner-icons-desktop,
+  .desktop-logo-overlay,
+  .hotspot-links {
+    display: none !important;
+  }
+
+  .wrapper {
+    position: relative;
+    min-height: 100svh;
+  }
+
+  /* -------------------------
+     TOP BAR
+     - Two rows: Logo (row 1) + Links (row 2)
+     - Fixed height so it’s easy to think about
+     ------------------------- */
+  .top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    /* make this taller/shorter if you ever want */
+    height: 110px;
+
+    padding: 28px 12px;
+    margin: 0;
+    background: #6dbbd1;
+    display: flex;
+    flex-direction: column;   /* logo row then links row */
+    justify-content: center;  /* center both rows vertically */
+    gap: 6px;
+    width: 100% !important;
+    z-index: 20;
+  }
+
+  /* Bigger logo inside the bar */
+  .top-bar img {
+    height: 90px !important;  /* adjust if you want it larger/smaller */
+    width: auto;
+    flex: 0 0 auto;
+    padding-top: 30px;
+  }
+
+  /* Links row: stays inside, can wrap to the next line */
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    max-width: 100%;
+    padding-bottom: 50px;
+    
+  }
+  .nav-links a {
+    font-size: 25px !important;  /* bigger links; change to 18px if too large on very small phones */
+    line-height: 1.65;
+    text-decoration: underline;
+    font-weight: 800 !important;
+    white-space: nowrap;
+  }
+
+  /* -------------------------
+     MOBILE SLIDER (the image area)
+     - Starts right under the top bar
+     - Fixed height so it’s easy to control
+     ------------------------- */
+  .mobile-slider {
+    position: absolute;
+    top: 150px;          /* must match .top-bar height above */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92vw;
+    bottom: 128px;
+
+    /* how tall the image area is; lower this to make it “shorter” */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px; /* rounded corners all around */
+    z-index: 9000;
+  }
+
+  .mobile-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* -------------------------
+     MOBILE LOGO OVERLAY (letters over the image)
+     - Centered around the middle of the screen area
+     ------------------------- */
+  .mobile-logo-overlay {
+    display: flex !important;
+    position: absolute;
+
+    /* place roughly in the middle of the visible area */
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70vw;         /* keep proportions similar to before */
+    max-width: 420px;
+    height: auto;
+    z-index: 9999;
+    pointer-events: none;
+  }
+  .mobile-logo-overlay img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+
+  /* -------------------------
+     ADDRESS (angled) above bottom icons
+     ------------------------- */
+  .desktop-angled-text { display: none !important; }
+
+  .mobile-angled-text {
+    display: block;
+    position: absolute;
+
+    /* keep it just above the bottom icons */
+    bottom: 90px;        /* if icons change size, tweak this */
+    right: 12px;
+
+    font-size: 16px;
+    font-weight: 800;
+    color: black;
+    transform: rotate(-9deg);
+    z-index: 10;
+    text-decoration: none;
+    transition: transform .3s ease;
+
+    height: 36px;        /* simple fixed “band” for the text */
+    line-height: 36px;
+  }
+  .mobile-angled-text:hover { transform: rotate(-9deg) scale(1.03); }
+
+  /* -------------------------
+     BOTTOM ICONS (call / instagram / email)
+     ------------------------- */
+  .corner-icons-mobile {
+   position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;   /* same spacing everywhere */
+  display: flex;
+  justify-content: center;
+  gap: 22px;      /* distance between icons */
+  flex-direction: row;
+  z-index: 11;
+  }
+
+  .corner-icons-mobile a {
+    width: 64px;           /* icon button size */
+    height: 64px;
+    border-radius: 20%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex: 0 0 auto;
+  }
+
+  .corner-icons-mobile svg {
+    width: 40px;           /* icon glyph size inside the button */
+    height: 40px;
+    fill: #6dbbd1;
+    pointer-events: none;
+  }
+}
+
+/* -------------------------
+   VERY SHORT SCREENS
+   (e.g., older iPhone SE heights)
+   Make things a little smaller so nothing overflows.
+   ------------------------- */
+@media (max-width: 600px) and (max-height: 620px) {
+  .top-bar { height: 100px; }
+  .top-bar img { height: 52px !important; }
+  .nav-links a { font-size: 18px !important; }
+
+  .mobile-slider { 
+    top: 100px;          /* match bar height */
+    height: 54svh;       /* slightly shorter image */
+  }
+
+  .mobile-logo-overlay { width: 64vw; }
+
+  .mobile-angled-text {
+    bottom: 84px;
+    font-size: 15px;
+    height: 34px;
+    line-height: 34px;
+  }
+
+  .corner-icons-mobile a {
+    width: 60px;
+    height: 60px;
+  }
+  .corner-icons-mobile svg {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+    
+
+
+  
+  
+
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="https://bellhopgroup.com">
+      <img src="../code/brød_white.png" alt="BRØD Logo" style="height: 8vw; width: auto;" />
+    </a>
+  
+  <div class="nav-links">
+  <a href="https://brod.resos.com/booking" target="_blank" style="color: rgb(0, 0, 0); text-decoration: underline; font-size: 2vw; font-weight: bold;">reservations</a>
+  <a href="./Menus/RestMenu/Restaurant Beverage.pdf" target="_blank" style="color: rgb(203,189,153); text-decoration: underline; font-size: 2vw; font-weight: bold;">restaurant</a>
+  <a href="./Menus/RestMenu/-1 Bar Beverage.pdf" target="_blank" style="color: rgb(163,155,68); text-decoration: underline; font-size: 2vw; font-weight: bold;">bar</a>
+</div>
+</div>
+  <div class="wrapper">
+  
+    <div class="angled-text desktop-angled-text">
+      <a href="https://maps.app.goo.gl/nFoR2sN2y9AkPp518" target="_blank" class="angled-text" >69 Egnate Ninoshvili St</a>
+    </div>
+    <div>
+      <a href="https://maps.app.goo.gl/nFoR2sN2y9AkPp518" target="_blank" class="angled-text mobile-angled-text">69 Egnate Ninoshvili St</a>
+    </div>
+
+<div style="position: absolute; top: 2.5vw; left: 2vw; z-index: 25; display: flex; align-items: center; gap: 1vw;">
+  
+</div>
+    <div class="mobile-slider">
+      <img id="mobile-slide" src="../code/_DSF5757.webp" alt="Mobile Slide" decoding="async"/>
+      
+      
+    </div>
+
+    <div class="scroll-container">
+      <div class="scroll-column scroll-up">
+        <img src="../code/_DSF6149.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6130.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6075.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6020.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5978.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5953.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5931.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5868.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5838.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5716.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6149.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6130.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6075.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6020.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5978.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5953.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5931.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5868.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5838.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5716.webp" loading="lazy" decoding="async">
+      </div>
+
+      <div class="scroll-column scroll-down">
+        <img src="../code/_DSF6142.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6081.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6030.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5986-2.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5964.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5951.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5869.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5850.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5789.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5686.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6142.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6081.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF6030.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5986-2.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5964.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5951.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5869.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5850.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5789.webp" loading="lazy" decoding="async">
+        <img src="../code/_DSF5686.webp" loading="lazy" decoding="async">
+      </div>
+    </div>
+
+    <!-- Desktop overlay -->
+<div class="logo-overlay desktop-logo-overlay">
+  <img src="../code/brod_logo1.png" alt="BRØD Desktop Logo" />
+</div>
+
+<!-- Mobile overlay -->
+<div class="logo-overlay mobile-logo-overlay">
+  <img src="../code/letters_mobile.png" alt="BRØD Mobile Logo" />
+</div>
+
+    <div class="corner-icons-desktop">
+      <a href="tel:+995596228866" title="Call">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.464 15.464 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22.25 1.75 13.93 1.75 3a1 1 0 011-1H6.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/brodtbilisi/" title="Instagram" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+        </svg>
+      </a>
+
+      <a href="mailto:info@bellhopgroup.com" title="Email" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="hotspot-links">
+      <a href="https://brod.resos.com/booking" class="link-reservations" title="reservations" target="_blank">reservations</a>
+      <a href="../code/Menus/menu.pdf" class="link-menu" title="menu" target="_blank">restaurant</a>
+      <a href="../code/Menus/bar.pdf" class="link-bar" title="bar" target="_blank">bar</a>
+    </div>
+  </div>
+  <div class="corner-icons-mobile">
+      <a href="tel:+995596228866" title="Call">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.464 15.464 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22.25 1.75 13.93 1.75 3a1 1 0 011-1H6.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/brodtbilisi/" title="Instagram" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+        </svg>
+      </a>
+      <a href="mailto:info@bellhopgroup.com" title="Email" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+        </svg>
+      </a>
+    </div>
+
+  <script>
+    const images = [
+    "../code/_DSF6075.webp",
+    "../code/_DSF6130.webp",
+    "../code/_DSF6020.webp",
+    "../code/_DSF5978.webp",
+    "../code/_DSF5953.webp",
+    "../code/_DSF5838.webp",
+    "../code/_DSF5868.webp",
+    "../code/_DSF5716.webp",
+    "../code/_DSF5931.webp",
+    "../code/_DSF6142.webp", 
+    "../code/_DSF5686.webp",
+    "../code/_DSF6030.webp", 
+    "../code/_DSF5986-2.webp",
+    "../code/_DSF5964.webp", 
+    "../code/_DSF6081.webp", 
+    "../code/_DSF5951.webp", 
+    "../code/_DSF5850.webp", 
+    "../code/_DSF5789.webp", 
+    "../code/_DSF6149.webp",
+      "../code/_DSF5869.webp"
+    ];
+
+    let current = 0;
+    const imgElement = document.getElementById('mobile-slide');
+
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      imgElement.src = images[current];
+    }, 1050);
+  </script>
+</body>
+</html>
+
+<!-- *{
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+    } -->
